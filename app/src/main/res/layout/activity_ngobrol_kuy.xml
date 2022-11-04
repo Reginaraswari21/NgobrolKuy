@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_drawable"
+    tools:context=".NgobrolKuy">
+    <TextView
+        android:id="@+id/ngobrolText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngobrol"
+        android:textColor="@color/white"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:textStyle="bold"
+        android:textSize="32dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kuy"
+        android:textColor="@color/pink"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:textStyle="bold"
+        android:textSize="32dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ngobrolText"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="4dp"/>
+    <ImageView
+        android:id="@+id/imgSetting"
+        android:layout_width="48dp"
+        android:layout_height="32dp"
+        android:src="@drawable/doticon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="32dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/ngobrolText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="64dp"
+        android:layout_marginHorizontal="32dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ct1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ft1"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/man"
+                    app:layout_constraintStart_toStartOf="@id/ct1"
+                    app:layout_constraintTop_toTopOf="@id/ct1" />
+
+                <TextView
+                    android:id="@+id/chatJuned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Juned"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    app:layout_constraintStart_toEndOf="@id/ft1"
+                    app:layout_constraintTop_toTopOf="@id/ft1" />
+
+                <TextView
+                    android:id="@+id/tc.chat1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Bro nongkrong yuk"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    app:layout_constraintStart_toStartOf="@+id/chatJuned"
+                    app:layout_constraintTop_toBottomOf="@+id/chatJuned" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18.30"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="@id/ct1"
+                    app:layout_constraintTop_toBottomOf="@id/chatJuned" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ft2"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/erere"
+                    app:layout_constraintStart_toStartOf="@id/ct1"
+                    app:layout_constraintTop_toBottomOf="@+id/ft1" />
+
+                <TextView
+                    android:id="@+id/tv.NgobrolKuy2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="lele"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    app:layout_constraintStart_toEndOf="@id/ft2"
+                    app:layout_constraintTop_toTopOf="@id/ft2" />
+
+                <TextView
+                    android:id="@+id/chat2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="kiw"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    app:layout_constraintStart_toStartOf="@+id/tv.NgobrolKuy2"
+                    app:layout_constraintTop_toBottomOf="@+id/tv.NgobrolKuy2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18.20"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="@id/ct1"
+                    app:layout_constraintTop_toBottomOf="@id/tv.NgobrolKuy2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

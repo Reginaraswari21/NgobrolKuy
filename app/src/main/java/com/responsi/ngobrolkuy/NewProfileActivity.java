@@ -14,7 +14,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-public class ProfilePicActivity extends AppCompatActivity {
+public class NewProfileActivity extends AppCompatActivity {
     private ImageView btnEdit, imgProfile;
     private int GALLERY_REQUEST_CODE = 1;
     private Uri imageUri;
@@ -40,13 +40,13 @@ public class ProfilePicActivity extends AppCompatActivity {
         btnLewati.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ProfilePicActivity.this, NgobrolKuy.class));
+                startActivity(new Intent(NewProfileActivity.this, NgobrolKuy.class));
             }
         });
         btnLanjut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ProfilePicActivity.this, NgobrolKuy.class));
+                startActivity(new Intent(NewProfileActivity.this, NgobrolKuy.class));
             }
         });
     }
